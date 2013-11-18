@@ -1,12 +1,6 @@
 {
-	"name": "fmccoy/anthembootstrap",
+	"name": "fmccoy/anthem-bootstrap",
 	"type": "wordpress-plugin",
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/fmccoy/wp-bootstrap-navwalker"
-		}
-	],
 	"require": {
 		"twbs/bootstrap": "v3.0.0"
 	},
