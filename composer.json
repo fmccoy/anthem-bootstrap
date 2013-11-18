@@ -1,6 +1,6 @@
 {
 	"name": "fmccoy/anthem-bootstrap",
-	"type": "wordpress-plugin",
+	"type": "wordpress-theme",
 	"require": {
 		"twbs/bootstrap": "v3.0.0"
 	},
