@@ -7,7 +7,6 @@ class Base{
 	const THEME_NAME = "amgbootstrap";
 	const THEME_SLUG = "amgbootstrap";
 	const THEME_VERSION = "1.0";
-
 	const THEME_PREFIX = "amgbs";
 
 	// /const THEMED = new Theme();
@@ -54,11 +53,11 @@ class Base{
 		add_theme_support( 'post-thumbnails' );
 
 		register_nav_menus( array(
-			'fixed-top'	=>	__( 'Fixed Top',	$this->text_domain ),
-			'hometop'	=>	__( 'Home Top',		$this->text_domain ),
-			'homefront'	=>	__( 'Home Front',	$this->text_domain ),
-			'primary'	=>	__( 'Primary Menu',	$this->text_domain ),
-			'footer'	=>	__( 'Footer Menu',	$this->text_domain ),
+			'fixed-top'	=>	__( 'Fixed Top',	static::THEME_SLUG ),
+			'hometop'	=>	__( 'Home Top',		static::THEME_SLUG ),
+			'homefront'	=>	__( 'Home Front',	static::THEME_SLUG ),
+			'primary'	=>	__( 'Primary Menu',	static::THEME_SLUG ),
+			'footer'	=>	__( 'Footer Menu',	static::THEME_SLUG ),
 		) );
 	}
 
