@@ -1,6 +1,8 @@
 <?php
 
-require( get_template_directory() . '/vendor/autoload.php' );
+defined( 'VENDOR_DIR' ) or define( 'VENDOR_DIR', dirname( __FILE__ ) . '/vendor' );
+
+require_once( VENDOR_DIR . '/autoload.php' );
 
 /**
  * Set the content width based on the theme's design and stylesheet.
