@@ -17,7 +17,7 @@ namespace Anthem;
  * @since 3.0.0
  * @uses Walker
  */
-class WalkerNavMenu extends Walker {
+class WalkerNavMenu extends \Walker {
 	/**
 	 * What the class handles.
 	 *
