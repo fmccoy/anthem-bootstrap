@@ -3,6 +3,7 @@
  * The header for our theme.
  *
  * Displays all of the <head> seection and everything up till <div id="content">
+ * 
  * @package anthemwp
  */
 ?>

@@ -1,40 +1,41 @@
 <?php
 /**
- * Index.php
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
  *
  * @package anthemwp
  */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
 
-          <!-- <div class="container"> -->
+<!-- <div class="container"> -->
 
-            <div id="primary" class="col-lg-12 col-md-12 col-sm-12 content-area">
-              
-              <div id="main" class="site-main" role="main">
+  <div id="primary" class="col-lg-12 col-md-12 col-sm-12 content-area">
 
-                <?php if( have_posts() ) : ?>
+    <div id="main" class="site-main" role="main">
 
-                  <?php while( have_posts() ) : the_post(); ?>
+      <?php if ( have_posts() ) : ?>
 
-                    <?php get_template_part( 'content', 'page' ); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-                  <?php endwhile; ?>
+          <?php get_template_part( 'content', 'page' ); ?>
 
-                <?php else : ?>
+        <?php endwhile; ?>
 
-                  <?php get_template_part( 'no-results', 'index' ); ?>
+      <?php else : ?>
 
-                <?php endif; ?>
-                
-              </div><!-- /#main -->
+        <?php get_template_part( 'no-results', 'index' ); ?>
 
-            </div><!-- /#primary -->
-            
-          <!-- </div><!-- /.container -->
+      <?php endif; ?>
 
+    </div><!-- /#main -->
+
+  </div><!-- /#primary -->
+
+<!-- </div><!-- /.container -->
 
 <?php get_footer(); ?>
-
-        
